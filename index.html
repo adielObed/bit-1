@@ -1,65 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Mi dia a dia</title>
-	<link rel="stylesheet" type="text/css" href="estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi experiencia con equipos de cómputo</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<style>
-	body { 
-		background-color: #404040;
-	}
-</style>
 <body>
-	
-	<div class="titulo">
-		<h1>En línea con las aplicaciones que ayudan mi día a dia</h1>
-	</div>
 
-	<nav>
-		<ul>
-			<li><a href="">Inicio</a></li>
-			<li><a href="">Mas cosas</a></li>
-			<li><a href="">Punto web</a></li>
-			<li><a href="">Enlace</a></li>
-			<li><a href="">Sobre nosotros</a></li>
-			<li><a href="">Cuentanos</a></li>
-		</ul>
-	</nav>
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="mas-cosas.html">Más cosas</a></li>
+    <li><a href="punto-web.html">Punto web</a></li>
+    <li><a href="enlace.html">Enlace</a></li>
+    <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+    <li><a href="contacto.html">Cuéntanos</a></li>
+  </ul>
+</nav>
+  
+  <div class="layout">
 
-	<div class="contenido">
-		<div class="articulo">
-			<div>
-				<h2>Introducción</h2>
-				<p>En esta oportunidad usararemos como herramientas: el servicio de correo
-					electrónico que actualmente se manejan y a menos que tengamos acceso a las
-					aplicaciones o programas sugeridos debemos abrir una cuenta en la versión sin costo de
-					cada una.
-					Identificar las funcionalidades extra con que cuenta el correo electrónico y las
-					aplicará en ejercicios reales.
-					Conocer aplicaciones que mejoran su trabajo personal y colaborativo en línea.</p>
-				<img src="Funcionesbasicasdelordenador.img">
-			
-		<div class="secundario">
-			<h1>Conclusion</h1>
-			<p>¿Estaba usando todas las opciones que me brindaba el correo electrónico? ¿Las conocía
-				todas? ¿Me resultan útiles ahora que las he identificado? ¿Qué es lo que más me gustó del
-				ejercicio de esta actividad?
-				
-				No he usado todas las funciones que brinda el correo electronico, sin ambargo, estoy
-				familiarizado con este dado que es parte fundamental de mi trabajo diario, y realmente son muy
-				útilies cada una de las acciones que nos han mostrado, alguna no me la sabia, pero, las demás ya
-				las habia usado en cierto momento, es bueno explorar nuevos conocimientos, no habia usado
-				antes a Loom para grabar pantalla, siempre habia usado era Obs Estudio, es muy bueno tambien
-				solo que no da para generar link y esa es la facilidad de Loom, me gustó, me gustó.</p>
-			
-			<h2>Como usar la pc</h2>
-				<video src="Comousarlapc.mp4" width="300px" controls></video>
-			
-		</div>
-	</div>
-	
+    <aside class="sidebar">
+      <h3>Novedades</h3>
+	  <h2>La iniciativa de la IA</h2>
+	  <p>La inteligencia artificial (IA) no fue creada por una sola persona, sino que evolucionó a partir de ideas y avances clave, desde los modelos de neuronas artificiales de McCulloch y Pitts (1943), pasando por el concepto del Test de Turing (1950) propuesto por Alan Turing, hasta la acuñación del término "Inteligencia Artificial" en la Conferencia de Dartmouth (1956) por John McCarthy, sentando las bases para el campo moderno que combina lógica, aprendizaje automático y redes neuronales</p>
+      <img src="IA.jpg" alt="La iniciativa de la IA"> 
+	  <h2>Redes sociales mas usados</h2>
+	  <p>Las redes sociales más usadas a nivel global en 2025 incluyen Facebook, YouTube, Instagram, WhatsApp y TikTok, liderando con miles de millones de usuarios, seguidas por plataformas como WeChat, Snapchat y Reddit; en Colombia, la lista incluye WhatsApp, Facebook, Instagram y TikTok, reflejando tendencias mundiales y locales. Meta posee cuatro de las plataformas más grandes (Facebook, WhatsApp, Messenger, Instagram), destacando su dominio. </p>
+	  <img src="redessociales-masusadas.png" alt="Redes sociales mas usados">
+	  <h2>Equipos de computo mas usados</h2>
+	  <p>Los equipos de cómputo más usados son las computadoras portátiles (laptops) y las computadoras de escritorio (PC), seguidas de tablets y smartphones, con marcas populares como HP, Lenovo, Dell, Apple, Asus y Acer, que ofrecen modelos para uso doméstico, estudiantil, profesional y gaming, destacando la versatilidad y el equilibrio entre precio y rendimiento. </p>
+      <img src="equipos-computo.jpg" alt="Equipos de computo mas usados">
+    </aside>
 
+    <main class="main-content">
+
+
+  <section id="inicio" class="section">
+    <h1>Bienvenido a mi página</h1>
+    <p>Comparto mi experiencia diaria con equipos de cómputo y aplicaciones que me ayudan.</p>
+	<p>Cada día interactúo con equipos de cómputo y diversas aplicaciones que se han convertido en herramientas esenciales para mi rutina. Estas tecnologías me permiten organizar mejor mis actividades, optimizar procesos y facilitar la comunicación, convirtiéndose en un apoyo constante tanto en el ámbito laboral como académico. Gracias a ellas puedo resolver tareas con mayor rapidez, acceder a información de manera inmediata y mantenerme conectado con lo que necesito, lo que hace que mi experiencia diaria sea más productiva y eficiente</p>
+    <button id="modo-btn">Cambiar modo</button>
+  </section>
+
+
+<section id="mas-cosas" class="section">
+  <h2>Aplicaciones útiles</h2>
+  <div id="apps-list"></div>
+  <button id="add-app">Añadir aplicación</button>
+  <button id="remove-app">Borrar aplicación</button>
+</section>
+
+<section id="parrafos" class="section">
+  <ul>
+	<h2>Uso personal de la tecnología</h2>
+    <p>La tecnología se ha convertido en una extensión de mi rutina diaria. Los equipos de cómputo y las aplicaciones que utilizo me permiten organizar mis actividades, acceder a información en tiempo real y optimizar procesos que antes requerían más esfuerzo. Gracias a estas herramientas, puedo mantener un control más preciso de mis tareas y mejorar mi productividad personal.</p>
+	<h2>Aplicaciones digitales en la vida cotidiana</h2>
+    <p>Las aplicaciones digitales son un apoyo constante en mi día a día. Desde plataformas de comunicación hasta programas de gestión, cada una cumple un rol específico que facilita mi interacción con el entorno. Estas soluciones me ayudan a coordinar proyectos, estudiar de manera más eficiente y mantenerme conectado con lo que necesito en cualquier momento.</p>
+	<h2>Automatización y eficiencia</h2>
+    <p>La automatización tecnológica me permite reducir tiempos y errores en mis actividades. Al integrar sistemas y programas en mi rutina, logro que tareas repetitivas se ejecuten de manera más rápida y precisa. Esto no solo mejora mi desempeño, sino que también me da la oportunidad de enfocarme en aspectos más estratégicos y creativos.</p>
+    <h2>Conectividad y aprendizaje</h2>
+    <p>La conectividad que ofrecen los dispositivos tecnológicos me abre la puerta a nuevas oportunidades de aprendizaje. Puedo acceder a cursos, tutoriales y recursos académicos desde cualquier lugar, lo que fortalece mi formación y me mantiene actualizado frente a los avances del mundo digital.</p>
+</ul>
+</section>
+
+  <section id="punto-web" class="section">
+    <h2>Tip del dia</h2>
+	<p>Como manejar un computador sin teclado</p>
+    <video controls width="400">
+      <source src="comousarlapc.mp4" type="video/mp4">
+     
+    </video>
+	  <div class="video-btn">
+    <a href="https://www.youtube.com/watch?v=fuWyKQSg3J8" target="_blank">
+		<p>Si en algun momento no sabes que herremientas debes tener para mantenimiento de PCS</p>
+  <button>Ver video en YouTube</button>
+</a>
+  </div>
+
+  </section>
+
+
+  <footer>
+    <p>&copy; 2026 Mi página comunicativa * Adiel Herreño</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
